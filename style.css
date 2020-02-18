@@ -1,0 +1,74 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    background-image: url(Icons/background.jpg);
+    background-position: center;
+}
+#container {
+    margin: auto;
+    padding: 0px 20px;
+}
+/*Panels*/
+.Panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 960px;
+    margin-top: -100px;
+}
+#Icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+/*Tiles*/
+.tile {
+    padding: 10px;
+    margin: 10px;
+    background-color: #e5e6e4;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    transition: box-shadow 0.2s ease-in-out;
+}
+.tile:focus {
+    box-shadow: 0px 0px 10px 3px #00d2ff;
+}
+
+.searchBar {
+    display: flex;
+    margin: 15px 0px;
+}
+/*Images in Icon Tiles*/
+.icon img {
+    width: 128px;
+    height: 128px;
+}
+
+/*Images in Search Tiles*/
+.searchBar a img {
+    width: 64px;
+    height: 64px;
+}
+/*Search Bars*/
+input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #00d2ff;
+    margin: auto 10px;
+    background-color: #fafafa;
+    color: #231f20;
+    width: 40px;
+}
+
+.wrapper-promo {
+    display: block;
+    border: 0px;
+    text-decoration: none;
+}
+
+.wrapper-promo:focus {
+    box-shadow: 0px 0px 10px 3px #00d2ff;
+}
